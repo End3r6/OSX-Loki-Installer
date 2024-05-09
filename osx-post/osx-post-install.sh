@@ -12,5 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+echo "Creating Loki Command"
+
 sudo mkdir -p /usr/local/bin ;
 sudo ln -s /usr/local/loki/loki /usr/local/bin/loki ;
+
+echo "Done Creating Loki Command"
