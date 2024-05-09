@@ -12,4 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ln -s ./build/osx/loki /usr/local/bin/loki
+sudo mkdir -p /usr/local/bin ;
+sudo ln -s /usr/local/loki/loki /usr/local/bin/loki ;
