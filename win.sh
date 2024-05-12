@@ -14,4 +14,12 @@
 
 #!/bin/bash
 
-npm exec msi-packager ./build/win ./packages/loki-windows.msi -n loki-windows.msi;
+npm exec msi-packager \
+ ./build/win \
+ ./packages/loki-windows.msi\
+ --name Loki \
+ --version 1.0.0 \
+ --manufacturer com.end3r6.loki \
+ --icon ../Images/Icon_01.jpeg \
+ --executable loki.exe \
+ -u cb68b813-2416-48a9-9dac-1a13cb693104;

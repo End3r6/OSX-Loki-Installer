@@ -9,6 +9,7 @@
     ".NETCoreApp,Version=v7.0/osx-x64": {
       "Compiler/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack": "1.11.61",
           "Newtonsoft.Json": "13.0.3",
           "runtimepack.Microsoft.NETCore.App.Runtime.osx-x64": "7.0.4"
         },
@@ -736,6 +737,14 @@
           }
         }
       },
+      "HtmlAgilityPack/1.11.61": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.61.0",
+            "fileVersion": "1.11.61.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -756,6 +765,13 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "HtmlAgilityPack/1.11.61": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqZASeEFHS9quHvfZSwaULoAJLWkOYVPiQjc3P9J4pQS8vSYzrP3bxe04Vm7vYYuxwbQhq9hCSVvZVLTyRaNaQ==",
+      "path": "htmlagilitypack/1.11.61",
+      "hashPath": "htmlagilitypack.1.11.61.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

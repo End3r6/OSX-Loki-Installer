@@ -17,8 +17,8 @@
 echo "Packaging osx"
 source ./osx.sh
 
-# echo "Packaging windows"
-# source ./win.sh
+echo "Packaging windows"
+source ./win.sh
 
 # echo "Packaging linux"
 # source ./linux.sh
