@@ -12,9 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#!/bin/bash
+contents=$(cat ./build/version.txt)
+
+# Remove any whitespace or special characters from the contents
+# and replace them with underscores
+clean_contents=$(echo "$contents" | tr -d '[:space:]' | tr -s '_' )
+
+# Replace periods with hyphens
+clean_contents=${clean_contents//./-}
+
+# Append the cleaned contents to the name of the .pkg file
+pkg_name="loki-osx_${clean_contents}.pkg"
+
 pkgbuild --root ./build/osx \
  --install-location /usr/local/loki \
  --identifier com.end3r6.loki \
  --scripts ./osx-post  \
  --version 1.0.0 \
- ./packages/loki-osx.pkg ;
+ "./packages/${pkg_name}" ;
